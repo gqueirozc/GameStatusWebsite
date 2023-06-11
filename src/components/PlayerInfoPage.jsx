@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import Typography from "@mui/material/Typography";
 import CircularProgress from "@mui/material/CircularProgress";
+import NavBar from "./NavBar";
 import {
   GetPlayerInformation,
   ConfirmInsertDialog,
   ConfirmRemoveDialog,
   ConfirmUpdateInfoDialog,
 } from "../services/APIService";
-import NavBar from "./NavBar";
 import "../css/PlayerInfoPage.css";
 import "../css/PlayerTable.css";
 
@@ -127,6 +127,7 @@ export default function PlayerInfoPage() {
           <div className="container-inner">
             <div className="player-activities">
               <div className="player-info">
+                <img src={require(`../images/defaultHead.png`)}></img>
                 <Typography variant="h3" className="player-title">
                   {playerName}
                 </Typography>
