@@ -1,0 +1,40 @@
+.player-table{
+    height: 79vh;
+    overflow-x: auto;
+    /* border: 3px solid black !important; */
+    display: block;
+    font-size: 25px;
+}
+
+.player-table {
+    position: relative;
+  }
+  
+.player-table thead {
+    position: sticky;
+    top: 0;
+}
+
+thead th {
+    position: sticky !important;
+    background: darkgray !important;
+    width: 1000px !important;
+    height: 30px;
+    position: sticky;
+}
+
+td{
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    width: 500px !important;
+    cursor: pointer !important; 
+}
+
+.td3{
+    position: static;
+    text-align: center !important;
+    border: none;
+    user-select: none !important;
+    cursor: default !important;
+}

@@ -1,0 +1,145 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-inner {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.player-info {
+  text-align: center;
+}
+
+.player-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.player-activities {
+  max-width: 30%;
+}
+
+.player-skills {
+  max-width: 65%;
+  margin-left: 5%;
+}
+
+.table th{
+  vertical-align: middle;
+}
+
+.skills-table {
+  width: 120% !important;
+  margin-bottom: 50px !important;    
+  display: block;
+  font-size: 25px;
+}
+
+.skills-table th,
+.skills-table td {
+  padding: 10px;
+  text-align: center;
+  cursor: default !important;
+}
+
+.player-title {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.player-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.activity-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.activity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.kill-img,
+.activity-icon {
+  width: 30px;
+}
+
+.skill-img{
+  width: 25%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.activity-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.activity-details {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.activity-text {
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.activity-date {
+  font-size: 12px;
+  color: black;
+  text-align: center;
+}
+
+.empty-table-message {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button-container {
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-flex !important;
+  padding: 10px 20px !important;
+  font-size: 17px !important;
+  font-weight: bold !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  background-color: gray !important;
+  color: white !important;
+  border: solid !important;
+  border-radius: 6px !important;
+  cursor: pointer !important;
+}
+
+.btn:hover {
+  background-color: darkgray !important;
+}
