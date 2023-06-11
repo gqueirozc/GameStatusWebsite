@@ -59,6 +59,7 @@ export function ConfirmInsertDialog({ playerName }) {
   };
 
   const handleConfirm = async () => {
+    handleCloseDialog();
     try {
       await InsertPlayerData(playerName);
       alert("Started Tracking.");
@@ -76,8 +77,6 @@ export function ConfirmInsertDialog({ playerName }) {
         window.location.href = "/";
       }
     }
-
-    handleCloseDialog();
   };
 
   return (
@@ -118,6 +117,7 @@ export function ConfirmRemoveDialog({ playerName }) {
   };
 
   const handleConfirm = async () => {
+    handleCloseDialog();
     try {
       await DeletePlayerData(playerName);
       alert("Stopped Tracking... Navigating to home page.");
@@ -126,7 +126,6 @@ export function ConfirmRemoveDialog({ playerName }) {
       alert("An error occurred. Please try again later.");
       window.location.href = "/";
     }
-    handleCloseDialog();
   };
 
   return (
@@ -167,6 +166,7 @@ export function ConfirmUpdateInfoDialog({ playerName }) {
   };
 
   const handleConfirm = async () => {
+    handleCloseDialog();
     try {
       await UpdaatePlayerData(playerName);
       window.location.reload();
@@ -183,7 +183,6 @@ export function ConfirmUpdateInfoDialog({ playerName }) {
         window.location.href = "/";
       }
     }
-    handleCloseDialog();
   };
 
   return (
